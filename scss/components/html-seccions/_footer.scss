@@ -1,0 +1,61 @@
+@import "../properties/variables";
+@import "../properties/mixins";
+
+/*------------------------------------------------------------------------------------------------------------------------------- footer styles ---------------------------------------*/
+  
+.social-media2 {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-evenly;
+    padding: 0px 50px 0px 1300px;
+    text-decoration: none;
+    color: #ffffff !important;
+  }
+  
+  footer {
+    background-color: transparent;
+    color: $text-color;
+    text-shadow: $text-shadow;
+  
+    a {
+      color: white;
+      transition: all 1s ease-out;
+      z-index: 9;
+      line-height: 0px;
+    }
+  }
+  
+  @media all and (min-width: 1025px) {
+    footer a:hover {
+      transform: rotateX(360deg);
+      color: rgb(182, 117, 243);
+    }
+  }
+  
+  .trade-mark {
+   @include trade-mark-styles;
+  }
+  
+  @media all and (min-width: 1025px) {
+    .trade-mark:hover {
+      transform: rotateY(10deg);
+      color: rgb(182, 117, 243);
+    }
+  }
+  
+  .scroll-down-arrow {
+   @include scroll-arrow-styles;
+  }
+  
+  /*------------------------------------------------------------------------------------------------------ footer small and xs media query--------------------------------------------- */
+  @media screen and (max-width: 1025px) {
+    .social-media2, .scroll-down-arrow {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 575px) {
+    .trade-mark {
+      font-size: 65%;
+    }
+  }

@@ -1,0 +1,476 @@
+/*------------------------------------------------------------------------------------------------------------- general styles --------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  background-image: url("../images/wood.jpg");
+  background-size: cover;
+}
+
+/*------------------------------------------------------------------------------------------------------------ body responsive ---------------------------------------------------------*/
+@media screen and (max-width: 575px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+/*------------------------------------------------------------------------------------------------------------ navbar styles----------------------------------------------------------- */
+.navbar {
+  background-color: black;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar li {
+  color: white;
+  text-decoration: none;
+  padding: 0;
+  display: inline-block;
+  margin: 0px 5px;
+  margin-left: 1rem;
+  transition: all 1s ease-out;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 0;
+  display: inline-block;
+  margin: 0px 5px;
+  transition: all 1s ease-out;
+}
+
+.social-media {
+  width: 110%;
+  margin-right: -77rem;
+}
+.social-media a:hover {
+  transform: rotateX(360deg);
+}
+
+.navbar a:hover {
+  color: #e85bec !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  transition: all 1s ease-out;
+}
+
+.navbar li {
+  background-color: black;
+  color: white;
+}
+
+/*------------------------------------------------------------------------------------------------------------ navbar styles sm and xs devices----------------------------------------- */
+@media screen and (max-width: 630px) {
+  .navbar-nav {
+    min-height: 100vh;
+  }
+}
+@media screen and (max-width: 410px) {
+  .nav-link {
+    display: block;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    margin-left: 4rem;
+    margin-top: 0.5rem;
+  }
+}
+@media screen and (max-width: 387px) {
+  .social-media {
+    margin: -2rem 0 2rem 11rem;
+  }
+}
+@media screen and (min-width: 387px) and (max-width: 507px) {
+  .social-media {
+    margin: 1rem 0 -1rem -2rem;
+    display: inline-grid;
+  }
+}
+/*---------------------------------------------------------------------------------------------------- home main styles---------------------------------------------------------------- */
+.home-image img {
+  width: 100%;
+  height: auto;
+  padding: 7% 0 0 0;
+  margin: 0px 0 -4px 0px;
+}
+.home-image .main-img-overlay {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -6rem;
+  margin-bottom: 7rem;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.imagenes {
+  width: 100%;
+  background-color: transparent;
+  color: transparent;
+}
+.imagenes .row-margin {
+  margin-bottom: 2rem;
+}
+
+.card h5 p {
+  background-color: transparent;
+  color: transparent;
+}
+
+@media screen and (min-width: 1025px) {
+  .card-img-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    transition: all 1.5s ease-in;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .card-img-blur:hover {
+    backdrop-filter: blur(5px);
+  }
+}
+.accordion-button {
+  width: 15%;
+  color: white;
+  background-color: transparent;
+}
+
+.accordion-body {
+  color: #ffffff;
+  background-color: transparent;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #0c63e4;
+  background-color: transparent;
+}
+
+/*------------------------------------------------------------------------------------------------------ home small and xs media query------------------------------------------------- */
+@media screen and (max-width: 575px) {
+  .imagenes {
+    background-color: transparent;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 111%;
+    margin-left: -1rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .accordion-button {
+    width: 35%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
+/*------------------------------------------------------------------------------------------------------------------- about me styles ------------------------------------------------*/
+.container-fluid {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.container-fluid .img-fluid {
+  margin-top: 12rem;
+}
+.container-fluid .col-text h1 {
+  font-size: 2rem;
+  margin-top: 12rem;
+  border-bottom: 2px solid white;
+}
+.container-fluid .col-text p {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------contact me styles----------------------------------- */
+.background {
+  background-image: url("../images/1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0 0 0 0;
+  padding: 337px 0px 0 0px;
+}
+
+.column textarea {
+  resize: none;
+  width: 185px;
+}
+
+.contact-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  height: 0rem;
+  text-shadow: -1px 0 beige, 0 1px beige, 1px 0 beige, 0 -1px beige;
+  padding-bottom: 28rem;
+  padding-left: 1rem;
+}
+
+.first-name {
+  padding-bottom: 5%;
+}
+
+.email {
+  padding-top: 5%;
+  padding-left: 37px;
+}
+
+.subject {
+  padding-top: 5%;
+  margin-left: 9%;
+}
+
+.submit {
+  padding-left: 43%;
+}
+
+.contact-me {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
+  font-size: 196%;
+  padding-left: 25%;
+}
+
+.contact-form {
+  border-radius: 30px;
+}
+
+.column input[type=submit] {
+  border-radius: 10px;
+  width: 70%;
+  background-color: beige;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------contact me styles sm devices------------------------ */
+@media screen and (max-width: 575px) {
+  .background {
+    background-image: url("../images/contact-small.jpg");
+    background-size: cover;
+  }
+}
+/*----------------------------------------------------------------------------------------------------- online personal training styles------------------------------------------------ */
+.online img {
+  width: 85%;
+  height: 23rem;
+  margin-left: 7rem;
+  margin-top: 9rem;
+}
+
+@media screen and (min-width: 600px) {
+  .grid-style {
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr;
+  }
+}
+.description p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin-left: 0rem;
+  margin-top: 2rem;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.description-title h1 {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2rem;
+  margin-left: 9rem;
+  margin-top: 2rem;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.getting {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 1.3rem;
+  margin-top: -4rem;
+}
+
+.btn-book {
+  display: flex;
+  width: 16%;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  margin-left: 40rem;
+  color: black;
+  background-color: pink;
+  border-radius: 10px;
+  text-transform: none;
+  text-shadow: -1px 0 beige, 0 1px beige, 1px 0 beige, 0 -1px beige;
+}
+
+.online-text {
+  color: white;
+  padding: 15%;
+  font-size: large;
+}
+
+/*----------------------------------------------------------------------------------------------------- online personal training styles sm and xs devices------------------------------ */
+@media screen and (min-width: 377px) and (max-width: 500px) {
+  .online {
+    margin-top: 7rem;
+    width: 121%;
+    margin-left: -7rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .online {
+    margin-top: 4rem;
+    width: 121%;
+    margin-left: -7rem;
+  }
+}
+@media screen and (max-width: 547px) {
+  .online-text {
+    display: flex;
+    justify-content: flex-start;
+    width: 195%;
+    margin-top: 35rem;
+  }
+}
+@media screen and (max-width: 547px) {
+  .description-title h1 {
+    width: 260%;
+    margin: -34rem 1rem 1rem -3rem;
+    font-size: 2.6rem;
+  }
+}
+@media screen and (max-width: 547px) {
+  .description p {
+    width: 72%;
+    margin: -417px 0 5px -175px;
+    line-height: 1.8rem;
+    height: 573px;
+  }
+}
+@media screen and (max-width: 547px) {
+  .getting {
+    width: 100%;
+    margin: -412px 0 5px 2px;
+    line-height: 1.8rem;
+    height: 477px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .description p {
+    width: 79%;
+    margin-left: -10.5rem;
+    margin-bottom: 4rem;
+  }
+}
+/* -------------------------------------------------------------------------------------------------------------------------online guides styles---------------------------------------*/
+.carousel-item {
+  height: 42rem;
+  background-color: black;
+  color: white;
+  position: relative;
+}
+
+.carousel-caption {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  padding-bottom: 50px;
+}
+
+.background-pic img {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  opacity: 0.6;
+}
+
+.carousel-1 {
+  position: relative;
+}
+
+.btn-buy {
+  position: absolute;
+  margin-top: -40px;
+  text-shadow: -1px 0 beige, 0 1px beige, 1px 0 beige, 0 -1px beige;
+  color: black;
+  background-color: #ec69ec;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 450px) {
+  .background-pic img {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 0.6;
+  }
+}
+/*------------------------------------------------------------------------------------------------------------------------------- footer styles ---------------------------------------*/
+.social-media2 {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-evenly;
+  padding: 0px 50px 0px 1300px;
+  text-decoration: none;
+  color: #ffffff !important;
+}
+
+footer {
+  background-color: transparent;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+footer a {
+  color: white;
+  transition: all 1s ease-out;
+  z-index: 9;
+  line-height: 0px;
+}
+
+@media all and (min-width: 1025px) {
+  footer a:hover {
+    transform: rotateX(360deg);
+    color: #b675f3;
+  }
+}
+.trade-mark {
+  font-size: small;
+  transition: all 1s ease-out;
+  position: relative;
+  line-height: 0px;
+}
+
+@media all and (min-width: 1025px) {
+  .trade-mark:hover {
+    transform: rotateY(10deg);
+    color: #b675f3;
+  }
+}
+.scroll-down-arrow {
+  position: fixed;
+  width: 50px;
+  height: 0;
+  bottom: 40px;
+  right: -18px;
+  color: white;
+  z-index: 8;
+  transform: none;
+  transition: none;
+}
+
+/*------------------------------------------------------------------------------------------------------ footer small and xs media query--------------------------------------------- */
+@media screen and (max-width: 1025px) {
+  .social-media2, .scroll-down-arrow {
+    display: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  .trade-mark {
+    font-size: 65%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+@mixin scroll-arrow-styles {
+    position: fixed;
+    width: 50px;
+    height: 0;
+    bottom: 40px;
+    right: -18px;
+    color: white;
+    z-index: 8;
+    transform: none;
+    transition: none;
+}
+
+@mixin trade-mark-styles {
+    font-size: small;
+    transition: all 1s ease-out;
+    position: relative;
+    line-height: 0px;
+}
+
+@mixin boton ($color, $background-color, $border-radius, $transform) {
+    color: $color;
+    background-color: $background-color;
+    border-radius: $border-radius;
+    text-transform: $transform;
+}

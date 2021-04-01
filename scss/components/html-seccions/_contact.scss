@@ -1,0 +1,76 @@
+@import "../properties/variables";
+
+/*--------------------------------------------------------------------------------------------------------------------------------contact me styles----------------------------------- */
+  
+.background {
+    background-image: url("../images/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 0 0 0;
+    padding: 337px 0px 0 0px;
+  }
+  
+  .column {
+    
+    textarea {
+      resize: none;
+      width: 185px;
+    }
+  }
+  
+  .contact-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    height: 0rem;
+    text-shadow: $beige-text-shadow;
+    padding-bottom: 28rem;
+    padding-left: 1rem;
+  }
+  
+  .first-name {
+    padding-bottom: 5%;
+  }
+  
+  .email {
+    padding-top: 5%;
+    padding-left: 37px;
+  }
+  
+  .subject {
+    padding-top: 5%;
+    margin-left: 9%;
+  }
+  
+  .submit {
+    padding-left: 43%;
+  }
+  
+  .contact-me {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+    font-size: 196%;
+    padding-left: 25%;
+  }
+  
+  .contact-form {
+    border-radius: 30px;
+  }
+  
+  .column input[type="submit"] {
+    border-radius: 10px;
+    width: 70%;
+    background-color: beige;
+  }
+  
+  /*--------------------------------------------------------------------------------------------------------------------------------contact me styles sm devices------------------------ */
+  
+  @media screen and (max-width: 575px) {
+    .background {
+      background-image: url("../images/contact-small.jpg");
+      background-size: cover;
+    }
+  }

@@ -1,0 +1,82 @@
+@import "../properties/variables";
+
+/*------------------------------------------------------------------------------------------------------------ navbar styles----------------------------------------------------------- */
+  
+.navbar {
+    background-color: black;
+    width: 100%;
+    z-index: 1000;
+  
+    li {
+      color: $text-color;
+      text-decoration: none;
+      padding: 0;
+      display: inline-block;
+      margin: 0px 5px;
+      margin-left: 1rem;
+      transition: all 1s ease-out;
+    }
+  }
+  
+  a {
+    color: $text-color;
+    text-decoration: none;
+    padding: 0;
+    display: inline-block;
+    margin: 0px 5px;
+    transition: all 1s ease-out;
+  }
+  
+  .social-media {
+    a:hover {
+      transform: rotateX(360deg);
+    }
+  
+    width: 110%;
+    margin-right: -77rem;
+  }
+  
+  .navbar a:hover {
+    color: rgb(232, 91, 236) !important;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: $text-color;
+    transition: all 1s ease-out;
+  }
+  
+  .navbar li {
+    background-color: black;
+    color: $text-color;
+  }
+  
+  /*------------------------------------------------------------------------------------------------------------ navbar styles sm and xs devices----------------------------------------- */
+  
+  @media screen and (max-width: 630px) {
+    .navbar-nav {
+      min-height: 100vh;
+    }
+  }
+  
+  @media screen and (max-width: 410px) {
+    .nav-link {
+      display: block;
+      line-height: 2.5rem;
+      font-size: 1.5rem;
+      margin-left: 4rem;
+      margin-top: 0.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 387px) {
+    .social-media {
+      margin: -2rem 0 2rem 11rem;
+    }
+  }
+  
+  @media screen and (min-width: 387px) and (max-width: 507px) {
+    .social-media {
+      margin: 1rem 0 -1rem -2rem;
+      display: inline-grid;
+    }
+  }

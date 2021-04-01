@@ -1,0 +1,24 @@
+@import "../properties/variables";
+ 
+ /*------------------------------------------------------------------------------------------------------------------- about me styles ------------------------------------------------*/
+  
+.container-fluid{
+    color: $text-color;
+    text-shadow: $text-shadow;
+
+    .img-fluid{
+        margin-top: 12rem;
+    }
+
+.col-text h1{
+    font-size: 2rem;
+    margin-top: 12rem;
+    border-bottom: 2px solid white;
+}
+.col-text p{
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+}
+  
