@@ -134,21 +134,24 @@ a {
     backdrop-filter: blur(5px);
   }
 }
-.accordion-button {
-  width: 15%;
+.methology {
   color: white;
-  background-color: transparent;
-}
-
-.accordion-body {
-  color: #ffffff;
-  background-color: transparent;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  padding-top: 7px;
+  margin-top: 5rem;
+  border: 3px solid white;
 }
 
-.accordion-button:not(.collapsed) {
-  color: #0c63e4;
-  background-color: transparent;
+.testimonials {
+  width: 100%;
+  height: auto;
+  margin-top: 0rem;
+}
+.testimonials .carousel-item {
+  height: fit-content;
+}
+.testimonials .carousel-item img {
+  width: 100%;
 }
 
 /*------------------------------------------------------------------------------------------------------ home small and xs media query------------------------------------------------- */
@@ -159,11 +162,6 @@ a {
     margin-bottom: 2rem;
     width: 111%;
     margin-left: -1rem;
-  }
-}
-@media screen and (max-width: 575px) {
-  .accordion-button {
-    width: 35%;
   }
 }
 /*# sourceMappingURL=style.css.map */
@@ -185,6 +183,12 @@ a {
   line-height: 2rem;
 }
 
+/* ...................................................................................................................xs and sm media query........................................... */
+@media screen and (max-width: 600px) {
+  .about-me {
+    margin-top: -10rem;
+  }
+}
 /*--------------------------------------------------------------------------------------------------------------------------------contact me styles----------------------------------- */
 .background {
   background-image: url("../images/1.jpg");

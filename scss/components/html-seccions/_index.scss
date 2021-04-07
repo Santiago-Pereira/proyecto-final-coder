@@ -48,22 +48,24 @@
     }
   }
   
-  .accordion-button {
-    width: 15%;
+  .methology{
     color: $text-color;
-    background-color: transparent;
-  }
-  
-  .accordion-body {
-    color: #ffffff;
-    background-color: transparent;
     text-shadow: $text-shadow;
+    padding-top: 7px;
+    margin-top: 5rem;
+    border: 3px solid white;
   }
-  
-  .accordion-button:not(.collapsed) {
-    color: #0c63e4;
-    background-color: transparent;
+  .testimonials{
+    width: 100%;
+    height: auto;
+    margin-top: 0rem;
+    .carousel-item{
+      img{
+        width: 100%;
+      }height: fit-content;
+    }
   }
+ 
   
   /*------------------------------------------------------------------------------------------------------ home small and xs media query------------------------------------------------- */
   @media screen and (max-width: 575px) {
@@ -75,13 +77,5 @@
       margin-left: -1rem;
     }
   }
-  
-  @media screen and (max-width: 575px) {
-    .accordion-button {
-      width: 35%;
-    }
-  }
-
-   
   
   /*# sourceMappingURL=style.css.map */
