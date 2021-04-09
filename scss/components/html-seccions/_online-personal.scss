@@ -1,123 +1,28 @@
 @import "../properties/variables";
 @import "../properties/mixins";
 /*----------------------------------------------------------------------------------------------------- online personal training styles------------------------------------------------ */
+.btn-book{
+  display: flex;
+  width: 35%;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  margin-left: 40rem;
+  @include boton(black, pink, 10px, none );
+  text-shadow: $beige-text-shadow;
+}
+
   
-.online img {
-    width: 85%;
-    height: 23rem;
-    margin-left: 7rem;
-    margin-top: 9rem;
-  }
-  
-  @media screen and (min-width: 600px) {
-    .grid-style {
-      display: grid;
-      grid-template-columns: 0.8fr 0.8fr;
-    }
-  }
-  
-  .description p {
-    font-size: 1.3rem;
-    line-height: 2rem;
-    margin-left: 0rem;
+  /* ..................................................................................................media query................................................................... */
+@media screen and (max-width: 380px){
+  .online-image{
     margin-top: 2rem;
-    text-shadow: $text-shadow;
   }
-  
-  .description-title h1 {
-    display: flex;
-    justify-content: flex-start;
-    font-size: 2rem;
-    margin-left: 9rem;
-    margin-top: 2rem;
-    text-shadow: $text-shadow;
+}
+
+@media screen and (min-width: 380px) and (max-width: 450px){
+  .online-image{
+    margin-top: 6rem;
   }
-  
-  .getting {
-    color: white;
-    text-shadow: $text-shadow;
-    font-size: 1.3rem;
-    margin-top: -4rem;
-  }
-  
-  .btn-book{
-    display: flex;
-    width: 16%;
-    justify-content: center;
-    font-size: 1.5rem;
-    margin-bottom: 4rem;
-    margin-top: 4rem;
-    margin-left: 40rem;
-    @include boton(black, pink, 10px, none );
-    text-shadow: $beige-text-shadow;
-  }
-  
-  .online-text {
-    color: $text-color;
-    padding: 15%;
-    font-size: large;
-  }
-  
-  
-  /*----------------------------------------------------------------------------------------------------- online personal training styles sm and xs devices------------------------------ */
-  @media screen and (min-width: 377px) and (max-width: 500px) {
-    .online {
-      margin-top: 7rem;
-      width: 121%;
-      margin-left: -7rem;
-    }
-  }
-  
-  @media screen and (max-width: 376px) {
-    .online {
-      margin-top: 4rem;
-      width: 121%;
-      margin-left: -7rem;
-    }
-  }
-  
-  @media screen and (max-width: 547px) {
-    .online-text {
-      display: flex;
-      justify-content: flex-start;
-      width: 195%;
-      margin-top: 35rem;
-    }
-  }
-  
-  @media screen and (max-width: 547px) {
-    .description-title h1 {
-      width: 260%;
-      margin: -34rem 1rem 1rem -3rem;
-      font-size: 2.6rem;
-    }
-  }
-  
-  @media screen and (max-width: 547px) {
-    .description p {
-      width: 72%;
-      margin: -417px 0 5px -175px;
-      line-height: 1.8rem;
-      height: 573px;
-    }
-  }
-  
-  @media screen and (max-width: 547px) {
-    .getting {
-      width: 100%;
-      margin: -412px 0 5px 2px;
-      line-height: 1.8rem;
-      height: 477px;
-    }
-  }
-  
-  
-  @media screen and (max-width: 340px) {
-    .description p {
-      width: 79%;
-      margin-left: -10.5rem;
-      margin-bottom: 4rem;
-    }
-  }
-  
-  
+}
