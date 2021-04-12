@@ -338,15 +338,24 @@ a {
   margin-top: 11rem;
 }
 
+.online-text, .getting {
+  font-size: 1.5rem;
+}
+
 /* ..................................................................................................media query................................................................... */
-@media screen and (max-width: 380px) {
-  .online {
-    margin-top: 2rem;
+@media screen and (min-width: 700px) {
+  .online-text {
+    margin-top: 11rem;
   }
 }
-@media screen and (min-width: 380px) and (max-width: 450px) {
-  .online {
-    margin-top: 5rem;
+@media screen and (max-width: 450px) {
+  .getting {
+    margin-top: 4rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .online-personal-img {
+    margin-top: 12rem;
   }
 }
 @media screen and (max-width: 450px) {
