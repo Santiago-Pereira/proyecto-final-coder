@@ -10,7 +10,9 @@
   @include boton (black, rgb(236, 105, 236), 4px, uppercase);
   text-shadow: $beige-text-shadow;
 }
-
+.online-personal-img{
+  margin-top: 11rem;
+}
 
 /* ..................................................................................................media query................................................................... */
 @media screen and (max-width: 380px) {

@@ -233,7 +233,7 @@ a {
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-.container-fluid .img-fluid {
+.container-fluid .about-img {
   margin-top: 12rem;
 }
 .container-fluid .col-text h1 {
@@ -332,6 +332,10 @@ a {
   border-radius: 4px;
   text-transform: uppercase;
   text-shadow: -1px 0 beige, 0 1px beige, 1px 0 beige, 0 -1px beige;
+}
+
+.online-personal-img {
+  margin-top: 11rem;
 }
 
 /* ..................................................................................................media query................................................................... */
