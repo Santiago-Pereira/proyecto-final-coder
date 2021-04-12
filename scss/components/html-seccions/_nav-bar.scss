@@ -27,14 +27,7 @@
     transition: all 1s ease-out;
   }
   
-  .social-media {
-    a:hover {
-      transform: rotateX(360deg);
-    }
-  
-    width: 110%;
-    margin-right: -77rem;
-  }
+ 
   
   .navbar a:hover {
     color: rgb(232, 91, 236) !important;
@@ -49,12 +42,13 @@
     background-color: black;
     color: $text-color;
   }
+ 
+  /*------------------------------------------------------------------------------------------------------------ navbar media query----------------------------------------- */
   
-  /*------------------------------------------------------------------------------------------------------------ navbar styles sm and xs devices----------------------------------------- */
-  
-  @media screen and (max-width: 630px) {
+  @media screen and (max-width: 800px) {
     .navbar-nav {
       min-height: 100vh;
+      text-align: center;
     }
   }
   
@@ -68,15 +62,57 @@
     }
   }
   
-  @media screen and (max-width: 387px) {
-    .social-media {
-      margin: -2rem 0 2rem 11rem;
+  @media screen and (min-width: 1024px) {
+    .social-media{
+      margin-left: 20rem;
+      margin-top: 1rem;
     }
   }
-  
-  @media screen and (min-width: 387px) and (max-width: 507px) {
-    .social-media {
-      margin: 1rem 0 -1rem -2rem;
-      display: inline-grid;
+
+  @media screen and (max-width: 376px) {
+    .social-media{
+      margin-left: 4rem;
+      margin-top: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 321px) {
+    .nav-link{
+      margin-left: 3rem;
+      margin-top: 0rem;
+    }
+  }
+
+  @media screen and (min-width: 410px) and (max-width: 430px) {
+    .nav-link{
+      margin-left: 3.5rem;
+      margin-top: 1.5rem;
+      font-size: 2rem;
+      
+    }
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 800px) {
+    .nav-link{
+      margin-left: 1.9rem;
+      margin-top: 2.5rem;
+      font-size: 3rem;
+      
+    }
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 800px) {
+    .social-media{
+      font-size: 3rem;
+      margin-top: 4rem;
+    }
+  }
+
+  @media screen and (min-width: 1000px) and (max-width: 1100px) {
+    .navbar-nav a{
+      display: inline-block;
+      width: 100%;
+      padding: 0;
+      
     }
   }

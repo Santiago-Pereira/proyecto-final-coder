@@ -43,14 +43,6 @@ a {
   transition: all 1s ease-out;
 }
 
-.social-media {
-  width: 110%;
-  margin-right: -77rem;
-}
-.social-media a:hover {
-  transform: rotateX(360deg);
-}
-
 .navbar a:hover {
   color: #e85bec !important;
 }
@@ -65,10 +57,11 @@ a {
   color: white;
 }
 
-/*------------------------------------------------------------------------------------------------------------ navbar styles sm and xs devices----------------------------------------- */
-@media screen and (max-width: 630px) {
+/*------------------------------------------------------------------------------------------------------------ navbar media query----------------------------------------- */
+@media screen and (max-width: 800px) {
   .navbar-nav {
     min-height: 100vh;
+    text-align: center;
   }
 }
 @media screen and (max-width: 410px) {
@@ -80,15 +73,49 @@ a {
     margin-top: 0.5rem;
   }
 }
-@media screen and (max-width: 387px) {
+@media screen and (min-width: 1024px) {
   .social-media {
-    margin: -2rem 0 2rem 11rem;
+    margin-left: 20rem;
+    margin-top: 1rem;
   }
 }
-@media screen and (min-width: 387px) and (max-width: 507px) {
+@media screen and (max-width: 376px) {
   .social-media {
-    margin: 1rem 0 -1rem -2rem;
-    display: inline-grid;
+    margin-left: 4rem;
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 321px) {
+  .nav-link {
+    margin-left: 3rem;
+    margin-top: 0rem;
+  }
+}
+@media screen and (min-width: 410px) and (max-width: 430px) {
+  .nav-link {
+    margin-left: 3.5rem;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .nav-link {
+    margin-left: 1.9rem;
+    margin-top: 2.5rem;
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .social-media {
+    font-size: 3rem;
+    margin-top: 4rem;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+  .navbar-nav a {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
   }
 }
 /*---------------------------------------------------------------------------------------------------- home main styles---------------------------------------------------------------- */
@@ -102,7 +129,6 @@ a {
   color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-top: -6rem;
   margin-bottom: 7rem;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -117,11 +143,38 @@ a {
   margin-bottom: 2rem;
 }
 
-.card h5 p {
-  background-color: transparent;
-  color: transparent;
+.methology {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  padding-top: 7px;
+  margin-top: 5rem;
+  border: 3px solid white;
 }
 
+.testimonials {
+  width: 100%;
+  height: auto;
+  margin-top: -6rem;
+}
+.testimonials .carousel-item {
+  height: fit-content;
+}
+.testimonials .carousel-item img {
+  width: 100%;
+}
+
+.btn-guides {
+  width: 100%;
+  margin-top: 2rem;
+  text-shadow: -1px 0 beige, 0 1px beige, 1px 0 beige, 0 -1px beige;
+  color: black;
+  background-color: #ec69ec;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/*------------------------------------------------------------------------------------------------------ home small and xs media query------------------------------------------------- */
 @media screen and (min-width: 1025px) {
   .card-img-overlay:hover {
     background-color: rgba(0, 0, 0, 0.6);
@@ -134,27 +187,6 @@ a {
     backdrop-filter: blur(5px);
   }
 }
-.methology {
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  padding-top: 7px;
-  margin-top: 5rem;
-  border: 3px solid white;
-}
-
-.testimonials {
-  width: 100%;
-  height: auto;
-  margin-top: 0rem;
-}
-.testimonials .carousel-item {
-  height: fit-content;
-}
-.testimonials .carousel-item img {
-  width: 100%;
-}
-
-/*------------------------------------------------------------------------------------------------------ home small and xs media query------------------------------------------------- */
 @media screen and (max-width: 575px) {
   .imagenes {
     background-color: transparent;
@@ -162,6 +194,37 @@ a {
     margin-bottom: 2rem;
     width: 111%;
     margin-left: -1rem;
+  }
+  .imagenes h3 {
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+}
+@media screen and (max-width: 400px) {
+  .home-image img {
+    margin-top: 11rem;
+  }
+}
+@media screen and (min-width: 410px) and (max-width: 500px) {
+  .home-image img {
+    margin-top: 10.5rem;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 900px) {
+  .home-image img {
+    margin-top: 6rem;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1050px) {
+  .home-image img {
+    margin-top: 5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main-img-overlay {
+    font-size: 1rem;
+    position: absolute;
+    padding: 75px 0 0 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
@@ -260,53 +323,48 @@ a {
 }
 /*----------------------------------------------------------------------------------------------------- online personal training styles------------------------------------------------ */
 .btn-book {
-  display: flex;
-  width: 35%;
-  justify-content: center;
+  width: 20%;
   font-size: 1.5rem;
-  margin-bottom: 4rem;
-  margin-top: 4rem;
-  margin-left: 40rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
   color: black;
-  background-color: pink;
-  border-radius: 10px;
-  text-transform: none;
+  background-color: #ec69ec;
+  border-radius: 4px;
+  text-transform: uppercase;
   text-shadow: -1px 0 beige, 0 1px beige, 1px 0 beige, 0 -1px beige;
 }
 
 /* ..................................................................................................media query................................................................... */
 @media screen and (max-width: 380px) {
-  .online-image {
+  .online {
     margin-top: 2rem;
   }
 }
 @media screen and (min-width: 380px) and (max-width: 450px) {
-  .online-image {
-    margin-top: 6rem;
+  .online {
+    margin-top: 5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .btn-book {
+    width: 83%;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1030px) {
+  .btn-book {
+    width: 33%;
   }
 }
 /* -------------------------------------------------------------------------------------------------------------------------online guides styles---------------------------------------*/
-.carousel-item {
-  height: 42rem;
-  background-color: black;
-  color: white;
-  position: relative;
+.carousel-2 .img-fluid {
+  width: 100%;
+  height: 100%;
+  filter: brightness(85%);
 }
 
 .carousel-caption {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   padding-bottom: 50px;
-}
-
-.background-pic img {
-  width: 100%;
-  height: auto;
-  background-color: transparent;
-  opacity: 0.6;
-}
-
-.carousel-1 {
-  position: relative;
 }
 
 .btn-buy {
@@ -345,21 +403,18 @@ a {
     margin-top: 2rem;
   }
 }
-@media screen and (max-width: 450px) {
-  .background-pic img {
+@media screen and (max-width: 500px) {
+  .carousel-item .img-fluid {
     width: 100%;
     height: 100%;
-    background-color: transparent;
-    opacity: 0.6;
+    margin-top: 9rem;
   }
 }
-@media screen and (max-width: 450px) {
-  .carousel-1 {
-    height: fit-content;
-  }
-  .carousel-1 img {
-    width: fit-content;
-    height: fit-content;
+@media screen and (min-width: 700px) {
+  .carousel-item .img-fluid {
+    width: 100%;
+    height: 100%;
+    margin-top: 7rem;
   }
 }
 /*------------------------------------------------------------------------------------------------------------------------------- footer styles ---------------------------------------*/
@@ -376,6 +431,7 @@ footer {
   background-color: transparent;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin-top: 2rem;
 }
 footer a {
   color: white;
