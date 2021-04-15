@@ -10,14 +10,11 @@ body {
   background-color: black;
   background-image: url("../images/wood.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-x: hidden;
 }
 
-/*------------------------------------------------------------------------------------------------------------ body responsive ---------------------------------------------------------*/
-@media screen and (max-width: 575px) {
-  body {
-    overflow-x: hidden;
-  }
-}
 /*------------------------------------------------------------------------------------------------------------ navbar styles----------------------------------------------------------- */
 .navbar {
   background-color: black;

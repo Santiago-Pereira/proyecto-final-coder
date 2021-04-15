@@ -1,21 +1,17 @@
 /*------------------------------------------------------------------------------------------------------------- general styles --------------------------------------------------------*/
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-    background-color: black;
-    background-image: url("../images/wood.jpg");
-    background-size: cover;
-  }
-  
-  /*------------------------------------------------------------------------------------------------------------ body responsive ---------------------------------------------------------*/
-  @media screen and (max-width: 575px) {
-    body {
-      overflow-x: hidden;
-    }
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  background-image: url("../images/wood.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-x: hidden;
+}
