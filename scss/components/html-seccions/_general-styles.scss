@@ -9,9 +9,10 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: black;
-  background-image: url("../images/wood.jpg");
+  background-image: url("../images/100.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   overflow-x: hidden;
+  background-attachment: fixed;
 }
