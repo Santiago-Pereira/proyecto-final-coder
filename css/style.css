@@ -97,6 +97,7 @@ body {
   .testimonials .carousel-item {
     height: fit-content; }
     .testimonials .carousel-item img {
+      margin-top: 6rem;
       width: 100%; }
 
 .btn-guides {
