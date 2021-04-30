@@ -3,12 +3,6 @@
   /*---------------------------------------------------------------------------------------------------- home main styles---------------------------------------------------------------- */
   
   .home-image{
-    img{
-    width: 100%;
-    height: auto;
-    padding: 7% 0 0 0;
-    margin: 0px 0 -4px 0px;
-    }
     .main-img-overlay{
       color: $text-color;
       display: flex;
@@ -53,14 +47,14 @@
   .articles{
     h6{
       font-size: 120%;
-      color: rgb(237, 10, 253);
+      color: rgb(0, 0, 0);
     }
     &:hover{
       cursor: pointer;
     }
   }
   .modal-content{
-    background-color: rgb(249, 212, 253);
+    background-color: rgb(226, 234, 250);
   }
   /*------------------------------------------------------------------------------------------------------ home small and xs media query------------------------------------------------- */
  
@@ -90,29 +84,7 @@
     }
   }
 
-  @media screen and (max-width: 400px){
-    .home-image img{
-      margin-top: 11rem;
-    }
-  }
-
-  @media screen and (min-width: 410px) and (max-width: 500px){
-    .home-image img{
-      margin-top: 10.5rem;
-    }
-  }
-
-  @media screen and (min-width: 760px) and (max-width: 900px){
-    .home-image img{
-      margin-top: 6rem;
-    }
-  }
-
-  @media screen and (min-width: 1000px) and (max-width: 1050px){
-    .home-image img{
-      margin-top: 5rem;
-    }
-  }
+ 
 
   @media screen and (max-width: 450px){
     .main-img-overlay{

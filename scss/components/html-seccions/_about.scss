@@ -6,26 +6,13 @@
     color: $text-color;
     text-shadow: $text-shadow;
 
-    .about-img {
-        margin-top: 12rem;
-    }
-
     .col-text h1 {
         font-size: 2rem;
-        margin-top: 12rem;
         border-bottom: 2px solid white;
     }
 
     .col-text p {
         font-size: 1rem;
         line-height: 2rem;
-    }
-
-}
-
-/* ...................................................................................................................xs and sm media query........................................... */
-@media screen and (max-width: 600px) {
-    .about-me {
-        margin-top: -10rem;
     }
 }
