@@ -294,6 +294,13 @@ body {
   .card-deck {
     margin-top: 2rem; } }
 
+@media screen and (max-width: 430px) {
+  .carousel-caption p {
+    display: none; }
+  .carousel-caption h1, .carousel-caption h2 {
+    font-size: large;
+    margin-bottom: 3rem; } }
+
 /*------------------------------------------------------------------------------------------------------------------------------- footer styles ---------------------------------------*/
 .social-media2 {
   display: flex;
