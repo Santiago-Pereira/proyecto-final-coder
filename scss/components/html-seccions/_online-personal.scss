@@ -11,7 +11,7 @@
   text-shadow: $beige-text-shadow;
 }
 .online-personal-img{
-  margin-top: 1rem;
+  margin-top: 4rem;
 }
 
 .online-text, .getting{
@@ -20,7 +20,7 @@
 /* ..................................................................................................media query................................................................... */
 @media screen and (min-width: 700px) {
   .online-text{
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
   }
 
@@ -29,13 +29,6 @@
       margin-top: 4rem;
     }
   }
-
-  @media screen and (max-width: 450px) {
-    .online-personal-img {
-      margin-top: 1rem;
-    }
-  }
-
 @media screen and (max-width: 450px) {
   .btn-book {
     width: 83%;
