@@ -18,8 +18,8 @@
 }
 
 @mixin boton ($color, $background-color, $border-radius, $transform) {
-    color: $color;
-    background-color: $background-color;
+    color:black;
+    background-color: #f97288;
     border-radius: $border-radius;
     text-transform: $transform;
 }

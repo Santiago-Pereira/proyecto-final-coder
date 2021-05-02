@@ -5,7 +5,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: black;
   background-image: url("../images/100.jpg");
   background-size: cover;
@@ -69,7 +69,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .social-media {
-    margin-left: 28rem; } }
+    margin-left: 4rem;
+    margin-top: 0.4rem; } }
 
 /*---------------------------------------------------------------------------------------------------- home main styles---------------------------------------------------------------- */
 .home-image {
@@ -108,7 +109,7 @@ body {
   margin-top: 2rem;
   text-shadow: -1px 0 beige, 0 1px beige, 1px 0 beige, 0 -1px beige;
   color: black;
-  background-color: #ec69ec;
+  background-color: #f97288;
   border-radius: 4px;
   text-transform: uppercase;
   text-decoration: none; }
@@ -224,7 +225,7 @@ body {
   margin-bottom: 3rem;
   margin-top: 3rem;
   color: black;
-  background-color: #ec69ec;
+  background-color: #f97288;
   border-radius: 4px;
   text-transform: uppercase;
   text-shadow: -1px 0 beige, 0 1px beige, 1px 0 beige, 0 -1px beige; }
@@ -265,14 +266,14 @@ body {
   margin-top: -40px;
   text-shadow: -1px 0 beige, 0 1px beige, 1px 0 beige, 0 -1px beige;
   color: black;
-  background-color: #ec69ec;
+  background-color: #f97288;
   border-radius: 4px;
   text-transform: uppercase; }
 
 .card-deck button {
   text-shadow: -1px 0 beige, 0 1px beige, 1px 0 beige, 0 -1px beige;
   color: black;
-  background-color: #ec69ec;
+  background-color: #f97288;
   border-radius: 4px;
   text-transform: uppercase;
   margin-left: 11rem; }
